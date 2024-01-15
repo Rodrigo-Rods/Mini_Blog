@@ -1,0 +1,214 @@
+body {
+  background-color: #F6FCFF;
+  padding: 0;
+  margin: 0;
+  font-family: "Montserrat", sans-serif;
+}
+
+
+/*Placeholder dos inputs*/
+input::placeholder,
+textarea::placeholder {
+  font-family: "Montserrat", sans-serif;
+  color: #aaa;
+}
+
+/*Remove o outline dos inputs ativos no momento*/
+input:focus,
+textarea:focus {
+  outline: none;
+}
+
+/* CSS para mobile */
+@media only screen and (max-width: 800px) {
+  
+  body {    
+    font-size: 0.8em;   
+    overflow-x: hidden; 
+    
+        display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+  }
+  li{
+    font-size: 0.7em;
+  }
+
+  /* Ajusta o tamanho do container para telas menores */
+  .container {       
+    position: center;
+    margin: auto;
+    width: 90vw;
+  }
+  button {
+    max-width: 90px;
+  }
+
+  img{
+    width: 100%;
+  }
+
+  p {
+    white-space: wrap;
+  }
+
+  .Navbar {
+    font-size: .5em;
+    padding-left: 0;
+    padding-right: 0;
+    display: flex;
+    max-width: 90vw;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+     
+  }
+}
+  
+
+
+/*Remove os underlines, adiciona cor ao texto, fundo e efeito de transição para o hover*/
+a, nav, button {
+  text-decoration: none;
+  background-color: transparent;
+  border: none;
+  color: #000;
+  transition: 0.4s;
+  font-size: 1em;
+  cursor: pointer;
+  font-family: "Montserrat", sans-serif;
+}
+
+ button {  
+  color: #fff;
+  text-align: center;
+  cursor: pointer;
+  border-radius: 10px;
+  width: 120px;
+  font-weight: bold;
+  border: none;
+  padding: 10px 15px;
+  font-size: 1em;
+}
+
+/* Muda a cor do texto que o mouse esta fazendo hover */
+a:hover, nav button:hover {
+  text-shadow: #636363 0 0 1px; 
+  color: #000000;
+}
+
+/* Style dos formularios do site */
+form {
+  max-width: 40%;
+  margin: 0 auto;
+}
+
+/* Estilo para labels */
+label {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1em;
+}
+label span {
+  margin-bottom: .3em;
+  font-weight: bold;
+  text-align: left;
+}
+
+/* Estilo para elementos input e textarea */
+input, textarea {
+  box-sizing: border-box;
+  border: none;
+  border-bottom: 1px solid #ccc; 
+  padding: 8px 0; /* padding estava enorme, mas se der ruim mais tarde voltar para 8em */
+  background-color: transparent;
+}
+
+/* Estilo para botões */
+button, btn {
+  background-color: #1a8918;
+  color: #fff;
+  text-align: center;
+  cursor: pointer;
+  border-radius: 10px;
+  width: 120px;
+  font-weight: bold;
+  border: none;
+  padding: 10px 15px;
+  font-size: 1em;
+}
+
+/* Estilo para botões escuros */
+btn.btn-dark {
+  background-color: #000;
+  border-radius: 0;
+}
+
+/* Estilo para botões com contorno */
+btn.btn-outline{
+  background-color: transparent;
+  border-radius: 0;
+  color: #000;
+  border: 2px solid #000;
+  padding: 7px 30px;
+  border-radius: 5px;
+}
+
+.btn-outline{
+  background-color: transparent;
+  border-radius: 0;
+  color: #000;
+  border: 2px solid #000;
+  padding: 7px 30px;
+  border-radius: 5px;
+}
+
+
+
+/* Altera o fundo e a cor do texto quando o mouse passa sobre os botões */
+.btn:hover {
+  background-color: #0f730c;
+  color: #fff;
+  text-align: center;
+  cursor: pointer;
+  border-radius: 10px;
+  width: 120px;
+  font-weight: bold;
+  border: none;
+  padding: 10px 15px;
+}
+
+.btn:hover.btn-outline {
+  background-color: #000;
+  color: #fff;
+  border-radius: 0;
+  border: 2px solid #000000;
+  padding: 7px 30px;
+  border-radius: 5px;
+}
+
+/*Botão para deletar coisas*/
+.btn.btn-danger:hover {
+  background-color: #e60000;
+  color: #fff;
+  border-radius: 5px;
+}
+
+/* Estilo para botões desativados */
+button[disabled] {
+  background-color: #aaa;
+  border-radius: 5px;
+  cursor: progress;
+  font-size: small;
+}
+
+/* Estilo para mensagens de erro no container */
+.container .error {
+  color: #721c24;
+  background-color: #f8d7da;
+  border-color: #f5c6cb;
+  padding: 5px;
+  border-radius: 5px;
+}
